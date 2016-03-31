@@ -9,21 +9,21 @@
   border: 1px solid #dedede;
   margin: 0 auto;
 }
-li{
+li {
   list-style: none;
 }
-a{
+a {
   text-decoration: none;
 }
-#container{
+#container {
   padding: 3px;
 }
-#profile{
+#profile {
   background: transparent url(images/title_background.gif) repeat-x;
   margin-bottom: 23px;
   
 }
-#profile h3{
+#profile h3 {
   font-size: 18px;
   margin:4px 0px;
 }
@@ -31,58 +31,58 @@ a{
   float:left;
   margin:3px 3px;
 }
-#profile p{
+#profile p {
   height: 96px; 
   overflow: auto;
 }
 
-#facts{
+#facts {
   font-size:18px;
   margin: 0px 0px 19px 4px;
 }
-#facts-list{
+#facts-list {
   margin: 0px 20px 50px 43px;
 }
 #facts-list img {
   margin-right:5px;
 }
 
-.post{
+.post {
   position: relative;
 }
-.post p.comment{
+.post p.comment {
   font-size:15px;
   height: 43px;
   padding-left:3px;
   background-color:#ececec;
 }
-.post img{
+.post img {
   float:left;
   margin-left:20px;
   position: absolute;
   top:35px
 }
-.post-detail{
+.post-detail {
   font-size:14px;
   margin-left:60px;
 }
 
-#comment-post{
+#comment-post {
   margin-top:25px;  
 }
 
-#comment-post h3{
+#comment-post h3 {
   text-align:center;
 }
-#comment-post .small{
+#comment-post .small {
   width: 120px;
 }  
 
 }
-#comment-post input{
+#comment-post input {
   width:150px;
 }
-#comment-post textarea{
+#comment-post textarea {
   width:380px;
   height: 100px;
 }
