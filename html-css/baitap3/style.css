@@ -55,7 +55,7 @@ body {
 	background-color: #121214;
 }
 #container {
-  width:672px;
+  width:710px;
   height:585px;
 	margin-top:22px;
 	margin-left:65px;
@@ -63,7 +63,7 @@ body {
 }
 
 #main-content{
-  width:410px;
+  width:430px;
 	float:left;
 }
 
@@ -71,7 +71,7 @@ body {
 	margin-top:38px;
 }
 .content {
-	width: 410px;
+	width: 430px;
 	height: 175px;
 	margin:34px 26px 0px 0px;
 	border-bottom: 1px dotted #2d2d2f;
@@ -104,13 +104,14 @@ body {
 .more-link:hover {
 	color:#3d2fed;
 }
-.more-link:visited {
-	color:#b31919;
+
+.link ul {
+	width: 190px;
 }
 
 .link li {
 	list-style-image: url("images/arr.gif");
-	margin:14px 22px 14px 0px;
+	margin:14px 0px 14px 0px;
 }
 .link li a {
 	color:#595959;
@@ -131,6 +132,7 @@ body {
 	width:238px;
 	float:right;
 	background-color:#232227;
+	margin-left:35px;
 }
 
 #sidebar img {
