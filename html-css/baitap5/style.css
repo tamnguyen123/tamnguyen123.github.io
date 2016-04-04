@@ -151,6 +151,10 @@ body {
 .content a {
     color:#0a6395;
 }
+.content h4 a {
+    color:#0a6395;
+    text-decoration: none;
+}
 
 
 #mid {
