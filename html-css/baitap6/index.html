@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Bài tập 6</title>
+<meta charset="utf-8"/>
+<script type="text/javascript" language="javascript">
+	var check;
+	function hide(){
+		if(check){
+			document.getElementsByClassName("blue-content").style.display="none";
+		}
+	}
+</script>
+</head>
+<body>
+<div id="container">
+	<div id="main-content">
+		<div id="large-widget">
+
+			<div class="widget" id="right">
+				<h2>CELEBRITY PICS</h2>
+				<div class="content">
+				<img src="images/img-2.png" alt="#"/>
+				<a href="#">MORE</a>
+				<p><strong>+ BECKHAMS, CLAUDIA SCHIFFER</strong><br/>
+				VICTORIA and David Beckham dine out in NY, as top models
+				 Claudia Schiffer and Eva Herzigova hit the shops in Milan</p>
+				</div>
+			</div><!--end .widget-->
+
+			<div class="widget" id="left" >
+				<h2>DAILY CELEBRITY GOSSIP</h2>
+				<div class="content">
+				<img src="images/img-1.png" alt="#"/>
+				<a href="#">MORE</a>
+				<p><strong>+ RUSSELL CROWE + MORE...</strong><br/>
+				RUSSELL Crowe's son to marry Keith & Nicole's daughter, plus
+				Renee Zellweger reveals her breast cancer scare</p>
+				</div>
+			</div><!--end .widget-->
+		</div>
+		
+		<div class="blue-widget" id="blue-left">
+			<h2>TOP 3 MOVIE TRAILERS</h2>
+			<div class="drop-widget" onclick="hide()">
+				<a class="title" id="drop-title" href="#">The House Bunny (M)</a>
+				<img src="images/#" alt="#"/>
+			</div>
+			<div class="blue-content">
+				<img src="images/img-3.jpg" alt="#"/>
+				<p>When Playboy bunny Shelly is tossed out of the mansion, 
+				she falls in with the sorority girls from Zeta Alpha Zeta.<br/>
+				</p><a href="#" class="link">Watch Now</a>
+			</div>
+
+			<div class="drop-widget" onclick="hide()">
+				<a class="title" id="drop-title" href="#">Eagle Eye (M)</a>
+				<img src="images/#" alt="#"/>
+			</div>
+			<div class="blue-content">
+				<img src="images/img-3.jpg" alt="#"/>
+				<p>When Playboy bunny Shelly is tossed out of the mansion, 
+				she falls in with the sorority girls from Zeta Alpha Zeta.<br/>
+				</p><a href="#" class="link">Watch Now</a>
+			</div>
+
+			<div class="drop-widget" onclick="hide()">
+				<a class="title" id="drop-title" href="#">Journey To The Centre Of The Earth (PG)</a>
+				<img src="images/#" alt="#"/>
+			</div>
+			<div class="blue-content">
+				<img src="images/img-3.jpg" alt="#"/>
+				<p>When Playboy bunny Shelly is tossed out of the mansion, 
+				she falls in with the sorority girls from Zeta Alpha Zeta.<br/>
+				</p><a href="#" class="link">Watch Now</a>
+			</div>
+			
+			<p id="icon"><img src="images/now-showing-icon.gif" >&nbsp;Now Showing</p>
+			<select id="select">
+				<option value="#" selected>Select Movie</option>
+				<option value="#">Kingkong</option>
+				<option value="#">Pokemon</option>
+			</select>
+		</div><!--end .blue-widget-->
+
+		<div class="blue-widget">
+			<h2>MOVIE REVIEWS</h2>
+			<div class="content">
+				<a class="title" href="#">Eagle Eye</a>
+				<img src="images/img-4.jpg" alt="#"/>
+				<p>SHIA LaBeouf hits the ground running in Eagle Eye an against 
+				the clock conspiracy thriller with a timely technological t...<br/>
+				<a href="#" class="link">View Trailer</a></p>
+			</div><!--end .content-->
+
+			<div class="content">
+				<a class="title" href="#">House Bunny</a>
+				<img src="images/img-5.jpg" alt="#"/>
+				<p>IF YOU left Legally Blonde and Revenge Of The Nerds DVDs in
+				a darkened room for long enough, something like The House
+				 Bun...<br/>
+				<a href="#" class="link">View Trailer</a></p>
+			</div><!--end .content-->
+
+			<p><a href="#">Local Cinema listings</a>
+			<a href="#">+MORE MOVIES</a></p>
+
+		</div><!--end .blue-widget-->
+	</div><!--end #main-content-->
+
+	<div id="search">
+		<img src="images/Entertainment.gif" alt="#"/>
+		<form action="#" method="post">
+			<input type="text" name="search-box"/>
+			<input type="submit" value="search"/>
+		</form>
+	</div>
+</div><!--end #container-->
+
+</body>
+</html>
