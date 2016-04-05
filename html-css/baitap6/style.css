@@ -1,0 +1,263 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*****************************************************/
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:10pt;
+    background-color:#292728;
+}
+#container {
+    width:1000px;
+    margin:30px auto;
+}
+
+#main-content {
+    width: 670px;
+    float:left;
+}
+#search {
+    float:right;
+    margin:20px 50px;
+}
+#search img {
+    margin-bottom:5px;
+}
+#search form {
+    margin-left: 13px;
+}
+#large-widget {
+    width: 660px;
+    background: #fff url("images/confidential-logo.gif") no-repeat  20px 293px;
+    height: 320px;
+    
+}
+.widget {
+    width:305px;
+}
+.widget h2 {
+    background:transparent url("images/h2-confidential-heading-bg.gif") top left;
+    margin-top:1px;
+    padding:5px;
+    border-bottom:1px dotted red;
+    margin-bottom:5px;
+    padding-left:15px;
+    color:#fff;    
+}
+#right {
+    float:right;
+    margin-right:12px;
+    margin-top:-1px;
+    
+    
+}
+#right h2 {
+    border-left:1px solid #000;
+    margin-left:-15px;
+    margin-right:-12px;
+}
+#left {
+    margin-left:10px;
+}
+#left h2 {
+    margin-right:-13px;
+    margin-left:-10px;
+}
+#right .content {
+    border-left:1px dashed #000;
+    padding-left:15px;
+    margin-left:-15px;
+    
+}
+
+.widget a{
+    text-decoration:none;
+    color:#000;
+    font-weight:bold;
+    display:block;
+    margin:5px 0px 0px 0px;
+    padding-bottom:20px;
+    text-indent: 235px;
+    background:transparent url("images/h3-confidential-showbuzz-bg.gif") no-repeat top left;
+}
+.widget p strong {
+    display:block;
+    margin-bottom:-8px;
+    font-size:9pt;
+}
+
+.blue-widget {
+    width:320px;
+    background-color:#fff;
+    margin-top:12px;
+    
+    float:left;
+}
+.blue-widget h2 {
+    background:transparent url("images/h2-top-movie-trailers-bg.gif") top left;
+    margin-top:1px;
+    padding:5px;
+    border-bottom:1px dotted #859da9;
+    margin-bottom:5px;
+    
+}
+#blue-left {
+    margin-right:18px;
+}
+
+.title {
+    display:block;
+    padding:5px 0px 10px 10px;
+    margin-top:-5px;
+    
+    color:#2c81c1;
+    font-weight: bold;
+    text-decoration: none;
+}
+#drop-title {
+    background: transparent url("images/pa.jpg") repeat-x top left;
+    
+}
+.drop-widget {
+    position: relative;
+}
+.drop-widget img {
+    position: absolute;
+    top:4px;
+    left:300px;
+}
+.blue-content {
+    margin:10px;
+}
+.blue-content img {
+    float:left;
+    margin-right:10px;
+    margin-bottom:10px;
+}
+.link {
+    color:#2c81c1;
+    text-decoration:none;
+    font-weight:bold;
+    display:block;
+    margin-top:10px;
+    background:transparent url("images/film.png") no-repeat 110px;
+    text-indent: 25px;
+}
+#icon img {
+    margin-left:10px;
+}
+#icon {
+    font-weight:bold;
+    display:inline;
+}
+#select{
+    width: 190px;
+}
+
+
+
+
+
+
+
