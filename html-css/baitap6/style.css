@@ -212,15 +212,15 @@ body {
     margin-top:-5px;
     
     color:#2c81c1;
-    font-weight: bold;
-    text-decoration: none;
+    font-weight:bold;
+    text-decoration:none;
 }
 #drop-title {
-    background: transparent url("images/pa.jpg") repeat-x top left;
-    
+    background:transparent url("images/pa.jpg") repeat-x top left;
+    cursor:pointer;
 }
 .drop-widget {
-    position: relative;
+    position:relative;
 }
 
 .drop-widget img {
@@ -233,7 +233,7 @@ body {
     
 }
 #content2 {
-    display: none;
+    display:none;
 }
 #content3 {
     display:none;
@@ -262,7 +262,7 @@ body {
     display:inline;
 }
 #select{
-    width: 170px;
+    width:170px;
 }
 
 .blue-widget img {
@@ -285,7 +285,7 @@ body {
     float:right;
 }
 .p-content {
-    margin-bottom: 12px;
+    margin-bottom:12px;
 }
 .p-link {
     color:#2c81c1;
