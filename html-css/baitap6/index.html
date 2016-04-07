@@ -36,9 +36,9 @@
 		
 		<div class="blue-widget" id="blue-left">
 			<h2>TOP 3 MOVIE TRAILERS</h2>
-			<div class="drop-widget" onclick="hide1();" id="title1">
+			<div class="drop-widget" onclick="hide(1);" id="title1">
 				<h3 class="title" id="drop-title">The House Bunny (M)</h3>
-				<img class="close" id="close1" src="images/close-arrows.png" alt=""/>
+				<img class="close" id="close1" src="images/open-arrow.png" alt=""/>
 			</div>
 			<div class="blue-content" id="content1">
 				<img src="images/img-3.jpg" alt="#"/>
@@ -47,7 +47,7 @@
 				</p><a href="#" class="link">Watch Now</a>
 			</div>
 
-			<div class="drop-widget" onclick="hide2();" id="title2">
+			<div class="drop-widget" onclick="hide(2);" id="title2">
 				<h3 class="title" id="drop-title">Eagle Eye (M)</h3>
 				<img class="close" id="close2" src="images/close-arrows.png" alt=""/>
 			</div>
@@ -58,7 +58,7 @@
 				</p><a href="#" class="link">Watch Now</a>
 			</div>
 
-			<div class="drop-widget" onclick="hide3();" id="title3">
+			<div class="drop-widget" onclick="hide(3);" id="title3">
 				<h3 class="title" id="drop-title">Journey To The Centre Of The Earth (PG)</h3>
 				<img class="close" id="close3" src="images/close-arrows.png" alt=""/>
 			</div>
@@ -80,7 +80,10 @@
 		<div class="blue-widget">
 			<h2>MOVIE REVIEWS</h2>
 			<div class="blue-content">
-				<a class="title" href="#" >Eagle Eye</a><div id="rank1">&nbsp;</div>
+				<a class="title" href="#" >
+					Eagle Eye<div id="rank1">&nbsp;</div>
+				</a>
+				
 				<img src="images/img-4.jpg" alt="#"/>
 				<p class="p-content">SHIA LaBeouf hits the ground running in Eagle Eye an against 
 				the clock conspiracy thriller with a timely technological t...<br/></p>
@@ -88,7 +91,9 @@
 			</div><!--end .content-->
 
 			<div class="blue-content">
-				<a class="title" href="#">House Bunny</a>
+				<a class="title" href="#">
+					House Bunny<div id="rank2">&nbsp;</div>
+				</a>
 				<img src="images/img-5.jpg" alt="#"/>
 				<p class="p-content">IF YOU left Legally Blonde and Revenge Of The Nerds DVDs in
 				a darkened room for long enough, something like The House
