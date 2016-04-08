@@ -52,7 +52,7 @@ body {
   font-family:Arial;
   font-size:0.6875em;
   color:#595959;
-	background-color: #121214;
+	background-color:#121214;
 }
 #container {
   width:710px;
@@ -62,7 +62,7 @@ body {
   
 }
 
-#main-content{
+#main-content {
   width:430px;
 	float:left;
 }
@@ -71,10 +71,10 @@ body {
 	margin-top:38px;
 }
 .content {
-	width: 430px;
-	height: 175px;
+	width:430px;
+	height:175px;
 	margin:34px 26px 0px 0px;
-	border-bottom: 1px dotted #2d2d2f;
+	border-bottom:1px dotted #2d2d2f;
 }
 .content img {
 	float:left;
@@ -86,7 +86,7 @@ body {
 	margin:2px 0px;
 }
 #link-first {
-	margin-bottom: 80px;
+	margin-bottom:80px;
 }
 #top {
 	margin-top:39px
@@ -95,22 +95,20 @@ body {
 	display: block;
 	margin-top:15px;
 	margin-bottom:40px;
-	background: transparent url("images/arr_1.gif") no-repeat top left;
-	text-indent: 15px;
-	color: #fff;
+	background:transparent url("images/arr_1.gif") no-repeat top left;
+	text-indent:15px;
+	color:#fff;
 	text-decoration:none;	
 	clear:both;
 }
 .more-link:hover {
 	color:#3d2fed;
 }
-
 .link ul {
-	width: 190px;
+	width:190px;
 }
-
 .link li {
-	list-style-image: url("images/arr.gif");
+	list-style-image:url("images/arr.gif");
 	margin:14px 0px 14px 0px;
 }
 .link li a {
@@ -126,21 +124,17 @@ body {
 #link-right {
 	float:right;
 }
-
-
 #sidebar {
 	width:238px;
 	float:right;
 	background-color:#232227;
 	margin-left:35px;
 }
-
 #sidebar img {
 	padding-top:30px;
 	margin:70px 35px 30px 35px;
 	border-top: 1px solid #353439;
 }
-
 #sidebar h3 {
 	margin-left:35px;
 	color:#fff;
@@ -153,7 +147,6 @@ body {
 	margin-top:35px;
 	margin-left:35px;
 }
-
 #white {
 	color:#fff;
 }
