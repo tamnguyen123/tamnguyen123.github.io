@@ -127,7 +127,6 @@ body {
 }
 .content p {
     margin-top:5px;
-    /*! margin-right:10px; */
 }
 
 #chat  {
@@ -140,36 +139,42 @@ body {
     background-color:#faf0bf;
     border-bottom:2px solid #fff;
 }
+
 #chat li a {
     text-decoration:none;
     color:#0a6395;
 }
+
 #date {
-    color: #808080;
+    color:#808080;
     margin-bottom:10px;
 }
+
 .content a {
     color:#0a6395;
 }
+
 .content h4 a {
     color:#0a6395;
-    text-decoration: none;
+    text-decoration:none;
 }
-
 
 #mid {
     margin-top:20px;
 }
+
 #more {
     margin-top:20px;
-    height: 60px;
-    background: #f4f4ec url("images/img3.png") no-repeat top right;
-    margin-bottom: 30px;
+    height:60px;
+    background:#f4f4ec url("images/img3.png") no-repeat top right;
+    margin-bottom:30px;
 }
+
 #more a {
     color:#0a6395 ;
     text-decoration:none;
 }
+
 #more p {
     padding-top:15px;
     padding-left:20px;
@@ -177,41 +182,41 @@ body {
 
 .float {
     float:left;
-    width: 140px;
+    width:140px;
     margin:0px 10px;
 }
+
 .float a {
     display:block;
     text-decoration:none;
     margin-top:10px;
 }
+
 #bottom {
     margin-top:30px;
 }
 
-
-#more-link {
-    
-}
 #more-link h4 {
     margin-top:15px;
     padding-top:10px;
     border-top:1px solid #dadada;
 }
+
 #more-link ul {
     border:1px solid #dadada ;
     background-color:#fff;
     padding-bottom:5px;
 }
+
 #more-link ul li {
     list-style-type:none;
     margin:5px 10px;
     
 }
+
 #more-link ul li a {
     text-decoration:none;
     color:#0a6395;
-    
 }
 
 

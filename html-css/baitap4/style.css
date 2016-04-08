@@ -104,36 +104,33 @@ input, select {
 /*******************************************************/
 
 body {
-  background-color: #121212;
-  color: #605e5e;
-  font-family: Arial, "Times new roman";
+  background-color:#121212;
+  color:#605e5e;
+  font-family:Arial, "Times new roman";
   font-size:0.8em;
 }
 #container {
     width:720px;
 }
-
 #header {
-  height: 320px;
+  height:320px;
   background:transparent url("images/fill_header.jpg") no-repeat top left;
   position:relative;
   
 }
-
 #header img {
     position:absolute;
-    top: 53px;
-    left: 50px;
+    top:53px;
+    left:50px;
 }
 #header h1 {
-    color: #000000;
-    font-size: 3em;
-    position: absolute;
-    top: 30%;
+    color:#000000;
+    font-size:3em;
+    position:absolute;
+    top:30%;
     left:160px;
 }
 #container {
-    width;
     margin-left:70px;
     margin-top:-129px;
     position:relative;
@@ -152,12 +149,10 @@ body {
     color: #fff;
     text-decoration: none;
     display: block;
-   
 }
 #menu-bar .icon-menu a:hover {
     color:#192675;
 }
-
 #sidebar {
     width:240px;
     height:364px;
@@ -172,13 +167,13 @@ body {
     border-top:1px solid #7e7e7e;
 }
 #sidebar ul {
-    margin: 0px 25px;
+    margin:0px 25px;
     border-top:1px solid #2c2c2c;
-    padding: 25px 20px;
+    padding:25px 20px;
 }
 #sidebar ul li {
-    margin-bottom: 15px;
-    list-style-image: url("images/arr.gif");
+    margin-bottom:15px;
+    list-style-image:url("images/arr.gif");
 }
 #sidebar ul li a {
     color:#605e5e;
@@ -186,51 +181,43 @@ body {
 #sidebar ul li a:hover {
     color:#fff;
 }
-
 #main-content {
     width:400px;
     float:right;
-    margin-right: 40px;
+    margin-right:40px;
     margin-top:40px;
 }
-
 .rectangle {
-    background-color: #2c2c2c;
+    background-color:#2c2c2c;
     width:115px;
     height:20px;
     margin:20px 0px 15px 0px;
 }
-
 .content {
     margin-bottom:40px;
 }
 .content p {
-    margin-bottom: 15px;
-    padding-bottom: 20px;
-    border-bottom: 1px dotted #2c2c2c;
+    margin-bottom:15px;
+    padding-bottom:20px;
+    border-bottom:1px dotted #2c2c2c;
 }
-
 .more-link {
     color:#fff;
     text-decoration:none;
-    background: transparent url("images/arr_1.gif") no-repeat top left;
+    background:transparent url("images/arr_1.gif") no-repeat top left;
     display:block;
-    text-indent: 18px;
+    text-indent:18px;
     margin-bottom:60px
 }
 .more-link:hover {
     color:#192675;
 }
-
 #footer {
     clear:both;
-    height: 100px;
-    border-top: 1px dotted #2c2c2c;
-    
+    height:100px;
+    border-top:1px dotted #2c2c2c;
 }
 #footer p {
     margin-left:10px;
     margin-top:20px;
 }
-
-
