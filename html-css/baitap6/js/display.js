@@ -1,4 +1,4 @@
-// func show/hide of content
+// func show/hide content
 function showhideContent(position) 
 {
     var attrdisplay=document.getElementById("content"+position).style.display;
