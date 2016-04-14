@@ -1,0 +1,17 @@
+#date {
+  font-family:Arial;
+  width:200px;
+  height:30px;
+  background:transparent url("images/calendar.png") no-repeat top right;
+  font-size:14pt;
+}
+#calendar {
+	overflow: auto;
+}
+table {
+	border:1px solid red;
+}
+td {
+border:1px solid #000;
+}
+
