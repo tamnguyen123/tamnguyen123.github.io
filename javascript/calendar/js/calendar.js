@@ -9,34 +9,40 @@ var positionDayOne = 0;
 var results = "";
 var positionDateNow;
 
-function showCalendar() {
-    
-    document.write("<form id='calendar'>");
-    document.write("<table style='border:1px solid red'>");
-    
+
+function init() {
+    document.write("<form id='datepicker'>");
+    document.write("<input type='text' id='date' name='date' onclick='showCalendar();'/>");
+    createCalendar();
+    document.write("</form>");
+}
+
+function createCalendar() {
+    document.write("<table id='calendar' style='display:none'>");
     menuOfCalendar();
     insertNameOfDay();
     insertCalendar(now.getMonth(), now.getFullYear());
     document.write("</table>");
-    document.write("</form>");
-    
+ }
+function showCalendar() {
+    document.getElementById("calendar").style.display='block';
 }
 
 
 
 function menuOfCalendar() {
     document.write("<tr>");
-    document.write("<td class='click' onClick='previousYear();'>&#8647;</td>");
-    document.write("<td class='click' onClick='previousMonth();'>&larr;</td>");
+    document.write("<td class='click' onClick='preYear();'>&#8647;</td>");
+    document.write("<td class='click' onClick='preMonth();'>&larr;</td>");
     
-    document.write("<td class='click' colspan='2'><select>");
+    document.write("<td class='click' colspan='2'><select id='months' onChange='changeMonth();'>");
     for (var i=0; i<months.length; i++) {
         document.write("<option value="+i+">"+months[i]+"</option>");
     }
     document.write("</select></td>");
 
-    document.write("<td class='click'><select>");
-    for (var i=1900; i<=2020; i++) {
+    document.write("<td class='click'><select id='years' onChange='changeYear();'>");
+    for (var i=1910; i<=2020; i++) {
         document.write("<option value='"+i+"'>"+i+"</option>");
     }
     document.write("</select></td>");
@@ -55,33 +61,40 @@ function insertNameOfDay() {
     document.write("</tr>");
 }
 
-function insertCalendar(month, year) {
+function insertCalendar() {
     var count=1;
-    for (var i=0; i<5; i++) {
+    for (var i=0; i<6; i++) {
         document.write("<tr>");
         for (var j=0; j<7; j++) {
-            document.write("<td id='item"+count+"' class='item' ></td>");
+            document.write("<td id='item"+count+"' class='item' onClick='pickDay("+count+");'></td>");
             //document.getElementById('item'+count).innerHTML=count;
             count++;
         }
         document.write("</tr>");
     }
     setDate();
+    document.getElementById("months").value=now.getMonth();
+    document.getElementById("years").value=now.getFullYear();
 }
 
 function setDate() {
     var datenow=new Date().getDate();
-    var monthnow=new Date().getMonth();
-    var yearnow=new Date().getFullYear();
+    var monthnow=checkmonth;
+    var yearnow=checkyear;
     var day=0;
-
+    if (((yearnow%4==0)&&(yearnow%100!=0)) || (yearnow%400==0)) {
+        daysofmonth[1]=29;
+    } else {
+        daysofmonth[1]=28;
+    }
+ 
     var positionfirstday=new Date(yearnow, monthnow, 1).getDay();
     var numberdayofmonth=daysofmonth[monthnow];
     var positionlastday=positionfirstday+numberdayofmonth;
     var count=1;
-    for (var i=0; i<5; i++) {
+    for (var i=0; i<6; i++) {
         for (var j=0; j<7; j++) {
-            if (count>positionfirstday&&count<=numberdayofmonth+positionfirstday+1) {
+            if (count>positionfirstday&&count<=numberdayofmonth+positionfirstday) {
                 document.getElementById("item"+count).innerHTML=++day;
             }
             count++;
@@ -89,4 +102,68 @@ function setDate() {
     }
 }
 
+// 
+function clearCalendar() {
+    for (var i=1; i<43; i++) {
+        document.getElementById("item"+i).innerHTML="";
+        document.getElementById('item'+i).style.border="none";
+    }
+}
 
+function changeMonth() {
+    clearCalendar();
+    checkmonth=document.getElementById("months").value;
+    setDate();
+}
+
+function changeYear() {
+    clearCalendar();
+    checkyear=document.getElementById("years").value;
+    setDate();
+}
+
+function preMonth() {
+    clearCalendar();
+    checkmonth--;
+    if (checkmonth<0) {
+        checkmonth=11;
+        checkyear--;
+        document.getElementById("years").value=checkyear;
+    }
+    document.getElementById("months").value=checkmonth;
+    setDate();
+}
+
+function preYear() {
+    clearCalendar();
+    checkyear--;
+    document.getElementById("years").value=checkyear;
+    setDate();
+}
+
+function nextMonth() {
+    clearCalendar();
+    checkmonth++;
+    if(checkmonth>11) {
+        checkmonth=0;
+        checkyear++;
+        document.getElementById("years").value=checkyear;
+    }
+    document.getElementById("months").value=checkmonth;
+    setDate();
+}
+
+function nextYear() {
+    clearCalendar();
+    checkyear++;
+    document.getElementById("years").value=checkyear;
+    setDate();
+}
+
+function pickDay(position) {
+    var pickmonth=checkmonth+1;
+    var pickyear=checkyear;
+    var pickday=document.getElementsById("item"+position);
+    var date=pickday+'/'+pickmonth+'/'+pickyear;
+    document.getElementById("date").innerHTML=date;
+}
