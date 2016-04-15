@@ -5,4 +5,6 @@
   background:transparent url("images/calendar.png") no-repeat top right;
   font-size:14pt;
 }
-
+#calendar {
+	overflow: auto;
+}
