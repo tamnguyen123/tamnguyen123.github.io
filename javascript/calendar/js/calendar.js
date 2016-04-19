@@ -11,6 +11,7 @@ var positionDateNow;
 
 
 function init() {
+    document.write("<link rel='stylesheet' type='text/css' href='style.css'/>");
     document.write("<form id='datepicker'>");
     document.write("<input type='text' id='date' name='date' onclick='showCalendar();'/>");
     createCalendar();
@@ -18,7 +19,7 @@ function init() {
 }
 
 function createCalendar() {
-    document.write("<table id='calendar' style='display:none'>");
+    document.write("<table id='calendar' style='display:none; border:2px solid #000;' >");
     menuOfCalendar();
     insertNameOfDay();
     insertCalendar(now.getMonth(), now.getFullYear());
@@ -32,23 +33,23 @@ function showCalendar() {
 
 function menuOfCalendar() {
     document.write("<tr>");
-    document.write("<td class='click' onClick='preYear();'>&#8647;</td>");
-    document.write("<td class='click' onClick='preMonth();'>&larr;</td>");
+    document.write("<td class='click' onClick='preYear();' style='background-color:#a9cce3; color:#2e86c1; cursor:pointer;'>&#8647;</td>");
+    document.write("<td class='click' onClick='preMonth();' style='background-color:#a9cce3; color:#2e86c1; cursor:pointer;'>&larr;</td>");
     
-    document.write("<td class='click' colspan='2'><select id='months' onChange='changeMonth();'>");
+    document.write("<td class='click' colspan='2' style='background-color:#a9cce3;'><select id='months' onChange='changeMonth();' style='width:123px; height:26px; cursor:pointer;'>");
     for (var i=0; i<months.length; i++) {
         document.write("<option value="+i+">"+months[i]+"</option>");
     }
     document.write("</select></td>");
 
-    document.write("<td class='click'><select id='years' onChange='changeYear();'>");
+    document.write("<td class='click' style='background-color:#a9cce3;'><select id='years' onChange='changeYear();' style='width:59px; height:26px; cursor:pointer;'>");
     for (var i=1910; i<=2020; i++) {
         document.write("<option value='"+i+"'>"+i+"</option>");
     }
     document.write("</select></td>");
 
-    document.write("<td class='click'onClick='nextMonth();'>&rarr;</td>");
-    document.write("<td class='click' onClick='nextYear();'>&#8649;</td>");
+    document.write("<td class='click'onClick='nextMonth();' style='background-color:#a9cce3; color:#2e86c1; cursor:pointer;'>&rarr;</td>");
+    document.write("<td class='click' onClick='nextYear();' style='background-color:#a9cce3; color:#2e86c1; cursor:pointer;'>&#8649;</td>");
     document.write("</tr>");
 }
 
@@ -56,7 +57,7 @@ function menuOfCalendar() {
 function insertNameOfDay() {
     document.write("<tr>");
     for (var i=0; i<days.length; i++) {
-	document.write("<td>"+days[i]+"</td>");
+    document.write("<td style='color:#ff0000; font-size:18pt; font-weight:bold; background-color:#bebebe;'>"+days[i]+"</td>");
     }
     document.write("</tr>");
 }
@@ -96,6 +97,8 @@ function setDate() {
         for (var j=0; j<7; j++) {
             if (count>positionfirstday&&count<=numberdayofmonth+positionfirstday) {
                 document.getElementById("item"+count).innerHTML=++day;
+                document.getElementById("item"+count).style.background='#fff';
+                document.getElementById("item"+count).style.cursor='pointer';   
             }
             count++;
         }
@@ -104,9 +107,10 @@ function setDate() {
 
 // 
 function clearCalendar() {
-    for (var i=1; i<43; i++) {
+     for (var i=1; i<43; i++) {
         document.getElementById("item"+i).innerHTML="";
         document.getElementById('item'+i).style.border="none";
+        document.getElementById("item"+i).style.background='#2d2d2d';
     }
 }
 
@@ -163,7 +167,11 @@ function nextYear() {
 function pickDay(position) {
     var pickmonth=checkmonth+1;
     var pickyear=checkyear;
-    var pickday=document.getElementsById("item"+position);
+    var pickday=document.getElementById("item"+position).innerHTML;
     var date=pickday+'/'+pickmonth+'/'+pickyear;
-    document.getElementById("date").innerHTML=date;
+    if (pickday!="") {
+        document.getElementById("date").value="";
+        document.getElementById("date").value=date;
+    }
+     document.getElementById('calendar').style.display='none';
 }

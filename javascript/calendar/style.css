@@ -5,6 +5,16 @@
   background:transparent url("images/calendar.png") no-repeat top right;
   font-size:14pt;
 }
-#calendar {
-	overflow: auto;
+
+table {
+	background-color:#000;
+	width:450px;
+}
+
+td {
+	width:62px;
+	height:30px;
+	background-color:#2d2d2d;
+	text-align:center;
+
 }
