@@ -88,10 +88,19 @@ function setDate() {
     } else {
         daysofmonth[1]=28;
     }
+<<<<<<< HEAD
  
     var positionfirstday=new Date(yearnow, monthnow, 1).getDay();
     var numberdayofmonth=daysofmonth[monthnow];
     var positionlastday=positionfirstday+numberdayofmonth;
+=======
+
+    var numberday=dayofmonth[checkmonth];
+    var numberdaypreviousmonth=dayofmonth[previousmonth];
+    var numberdaynextmonth=dayofmonth[nextmonth];
+
+    var position=1;
+>>>>>>> refs/remotes/origin/master
     var count=1;
     for (var i=0; i<6; i++) {
         for (var j=0; j<7; j++) {
