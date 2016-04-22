@@ -8,41 +8,35 @@
 </head>
 <body>
 	<div id="form">
-		<form action="" method="post">
+		<form action="" method="post" name="register">
 			<table class="table">
 				<tr class="tr">
 					<td class="td1">Username:</td>
 					<td class="td2"><input type="text" value="" name="username" id="username" /></td>
-					<td id="errorUsername"></td>
+					<td id="checkUser"></td>
 				</tr>
 				<tr class="tr">
 					<td class="td1">Passwork:</td>
 					<td><input type="password" value="" name="password" id="password" /></td>
-					<td id="errorPassword"></td>
+					<td id="checkPass"></td>
 				</tr>
 				<tr class="tr">
 					<td class="td1">Email:</td>
 					<td><input type="input" value="" name="email" id="email" /></td>
-					<td id="errorEmail"></td>
+					<td id="checkEmail"></td>
 				</tr>
 				<tr class="tr">
 					<td class="td1">Birthday:</td>
 					<td>
-						<div id="datepicker">
-							<script type="text/javascript">
-								init();
-							</script>	
-							<!--<input type="text" id="output" name="output" disabled="disabled" />
-							<img src="images/calendar.png" alt="images/calendar.png" onclick="openCalendar();">-->
-						</div>	
+						<script type="text/javascript">
+							init();
+						</script>
 					</td>
-					<td id="errorBirthday"></td>
+					<td id="checkBirthday"></td>
 				</tr>
 				<tr class="tr">
-					<td>&nbsp;</td>
-					<td>
-						<button type="button" id="submit" name="submit" onclick="btnSubmitClick();">Submit</button> 
-						<button type="refresh">Refresh</button></td>
+					<td></td>
+					<td><button type="button" id="submit" name="submit" onclick="checkSubmit();">Submit</button> <button type="refresh">Refresh</button></td>
 					<td></td>
 				</tr>
 			</table>

@@ -11,15 +11,16 @@ var positionDateNow;
 
 
 function init() {
-    document.write("<link rel='stylesheet' type='text/css' href='style.css'/>");
-    document.write("<form id='datepicker'>");
+    //document.write("<link rel='stylesheet' type='text/css' href='style.css'/>");
+    //document.write("<form id='datepicker'>");
     document.write("<input type='text' id='date' name='date' onclick='showCalendar();'/>");
+    
     createCalendar();
-    document.write("</form>");
+    //document.write("</form>");
 }
 
 function createCalendar() {
-    document.write("<table id='calendar' style='display:none; border:2px solid #000;'>");
+    document.write("<table id='calendar' style='display:none; border:1px solid #000;width:200px; padding:0 auto;'>");
     menuOfCalendar();
     insertNameOfDay();
     insertCalendar(now.getMonth(), now.getFullYear());
@@ -35,13 +36,13 @@ function menuOfCalendar() {
     document.write("<td class='click' onClick='preYear();' style='background-color:#a9cce3; color:#2e86c1; cursor:pointer;'>&#8647;</td>");
     document.write("<td class='click' onClick='preMonth();' style='background-color:#a9cce3; color:#2e86c1; cursor:pointer;'>&larr;</td>");
     
-    document.write("<td class='click' colspan='2' style='background-color:#a9cce3;'><select id='months' onChange='changeMonth();' style='width:80px; height:26px; cursor:pointer;'>");
+    document.write("<td class='click' colspan='2' style='background-color:#a9cce3;'><select id='months' onChange='changeMonth();' style='width:50px; height:20px; cursor:pointer;'>");
     for (var i=0; i<months.length; i++) {
         document.write("<option value="+i+">"+months[i]+"</option>");
     }
     document.write("</select></td>");
 
-    document.write("<td class='click' style='background-color:#a9cce3;'><select id='years' onChange='changeYear();' style='width:45px; height:26px; cursor:pointer;'>");
+    document.write("<td class='click' style='background-color:#a9cce3;'><select id='years' onChange='changeYear();' style='width:30px; height:26px; cursor:pointer;'>");
     for (var i=1910; i<=2020; i++) {
         document.write("<option value='"+i+"'>"+i+"</option>");
     }
@@ -56,7 +57,7 @@ function menuOfCalendar() {
 function insertNameOfDay() {
     document.write("<tr>");
     for (var i=0; i<days.length; i++) {
-	document.write("<td style='color:#ff0000; font-size:14pt; font-weight:bold; background-color:#bebebe;'>"+days[i]+"</td>");
+	document.write("<td style='color:#ff0000; font-size:10pt; font-weight:bold; background-color:#bebebe;'>"+days[i]+"</td>");
     }
     document.write("</tr>");
 }
