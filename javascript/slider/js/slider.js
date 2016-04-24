@@ -7,37 +7,30 @@ var currentPostion = 0;
 var imageNow = 0;
 
 /*
-* init(): 
+* create variable when slider load 
 */
 function init(){
 	ul = document.getElementById('imageSlider');
 	items = ul.children;
-	imageNumber = items.length; // lấy số lg image
-	//imageWidth = items[0].children[0].clientWidth;
+	imageNumber = items.length; 
 	imageWidth = items[0].clientWidth;
 	ul.style.width = parseInt(imageWidth * imageNumber) + 'px';
 	back = document.getElementById("back");
 	next = document.getElementById("next");
 	back.onclick = function(){ onClickback();};
-	next.onclick = function(){ nextto();};
+	next.onclick = function(){ onClickNext();};
 	var imageItem = null;
+	document.getElementById("item0").style.background = "#A70018";
 }
 
-function nextto() {
-	ul.style.left=parseInt(imageWidth + 960) + 'px';
-}
-
-function slideTo() {
-	imageItem = items[4];
-	imageItem.style.position='relative';
-	imageItem.style.left = '0px';
-	imageItem.style.left = parseInt(imageItem.style.left) - 100 + 'px';
-}
-
-
+/*
+* run slider when click button
+* imageTo: index images next compare to index current image
+*/
 function slideTo(imageTo){
+	// direct run image next or previous
 	var direction;
-	var numOfimageTo = Math.abs(imageTo - imageNow);
+	var numberImageTo = Math.abs(imageTo - imageNow);
 
 	if (imageNow > imageTo) {
 		direction = 1;
@@ -48,24 +41,27 @@ function slideTo(imageTo){
 	currentPostion = -1 * imageNow * imageWidth;
 	
 	var start = new Date;
-	//var id = setInterval(function(){
-		/*var timePassed = new Date - start;
-		var progress = timePassed / 1000;
+	var id = setInterval(function(){
+		var time = new Date - start;
+		var progress = time / 1000;
 		if (progress > 1){
 			progress = 1;
-		}*/progress = 1;
-		var a = parseInt(currentPostion + direction * progress * imageWidth * numOfimageTo) + 'px';
-		//ul.style.left = parseInt(currentPostion + direction * progress * imageWidth * numOfimageTo) + 'px';
-		ul.style.left = parseInt(currentPostion - 100) + 'px';
-		
-		if (/*progress == 1*/ul.style.left==a){
+		}
+		ul.style.left = parseInt(currentPostion + direction * progress * imageWidth * numberImageTo) + 'px';
+		document.getElementById("item" + imageNow).style.background = "#43A8D4";
+		document.getElementById("item" + imageTo).style.background = "#A70018";
+				
+		if (progress == 1){
 			clearInterval(id);
 			imageNow = imageTo;
 		}
-	//}, 3000);
-setInterval(slideTo,3000);
+	}, 20); // 20: time slide to next image (2s)
+
 }
 
+/*
+* Slide to next image
+*/
 function onClickback(){
 	if (imageNow == 0){
 		slideTo(imageNumber - 1);
@@ -75,6 +71,9 @@ function onClickback(){
 	}		
 }
 
+/*
+* Slide to previous image
+*/
 function onClickNext(){
 	if (imageNow == imageNumber - 1){
 		slideTo(0);
