@@ -20,6 +20,11 @@ function checkSubmit() {
 	checkPass.innerHTML = "";
 	checkEmail.innerHTML = "";
 
+	user.style.background = '#fff';
+	pass.style.background = '#fff';
+	email.style.background = '#fff';
+	birthday.style.background = '#fff';
+
 	if(isNull(user.value)) {
 		user.style.background = '#FDEDEC';
 		checkUser.innerHTML = 'Name must be filled out';
