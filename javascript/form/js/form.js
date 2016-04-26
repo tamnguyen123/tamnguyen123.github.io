@@ -19,6 +19,7 @@ function checkSubmit() {
 	checkUser.innerHTML = "";
 	checkPass.innerHTML = "";
 	checkEmail.innerHTML = "";
+	checkBirthday.innerHTML = "";
 
 	user.style.background = '#fff';
 	pass.style.background = '#fff';
