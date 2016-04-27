@@ -490,8 +490,10 @@ function clicksprite(sprite, x, y) {
 		mana++;
 		main();
 	}
-	if((locationY > 0 && locationY < 40) && ((locationX > 380 && locationX < 420) || (locationX > 417 && locationX < 457) || (locationX > 454 && locationX < 494))) {
+
+	if((locationY > 0 && locationY < 40) && ((locationX > 380 && locationX < 420) || (locationX > 417 && locationX < 457) || (locationX > 454 && locationX < 494)) && boom_number!=0) {
 		boom_number--;
+		mana++;
 		getBoom();
 	}
 	var x_heart=160;
