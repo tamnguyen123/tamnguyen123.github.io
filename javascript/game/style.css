@@ -1,0 +1,18 @@
+#container {
+	width: 500px;
+	height: 500px;
+	margin: auto;
+	padding: auto;
+}
+
+#footer {
+	width: 500px;
+	height: 100px;
+	margin: auto;
+	padding: auto;
+	background-color: #80A217;
+}
+
+body {
+	background-color: black;
+}
