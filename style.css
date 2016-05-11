@@ -1,0 +1,96 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul li {
+  list-style: none;
+  margin: 3px
+}
+a {
+  text-decoration: none;
+  color: #4C9ED9;
+  font-size: 13pt;
+}
+a:hover {
+  color: #79BB0F;
+  font-weight: bold;
+}
+
+body {
+  background: transparent url(bg.jpg) top center;
+}
+
+#paper {
+  width: 750px;
+  border: 1px solid #9A9A9A;
+  margin: 0 auto;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  background-color: #fff;
+  box-shadow: 5px 0px 10px #B8B8B8;
+  
+}
+
+#header {
+  margin: 50px 0px 30px 85px;
+  position: relative;
+}
+
+#header #avatar {
+  float: left;
+  margin-right: 30px;
+  background: transparent url(photo-bg.gif) top left;
+  padding: 7px 13px 15px 7px;
+  width: 79px;
+  height: 79px;
+}
+
+#header #overlay {
+  position: absolute;
+  top: -13px;
+  left: -18px;
+}
+
+#header h1 {
+  width: 420px;
+  border-bottom: 1px solid #DBDBDB;
+}
+
+#header span {
+  color: #7A7A7A;
+}
+
+.page-content {
+  width: 700px;
+  margin-left: 70px;
+  clear: both;
+  
+}
+
+.page-content h2 {
+  font-size: 18px;
+  text-shadow: 4px 4px 4px #c1c1c1;
+  font-family: Century Gothic;
+  font-weight: normal;
+  width: 150px;
+  display: inline-block;
+  float:left;
+  margin-right: 30px;
+}
+
+.entry {
+  display: inline-block;
+  width: 300px;
+  background: transparent url(side-bg.gif) repeat-y top left;
+  padding-left: 30px;
+  border-bottom: 1px solid #DBDBDB;
+}
+
+.entry ul li {
+  padding: 5px 0;
+}
+.entry ul li a {
+  font-size: 14pt;
+}
+
