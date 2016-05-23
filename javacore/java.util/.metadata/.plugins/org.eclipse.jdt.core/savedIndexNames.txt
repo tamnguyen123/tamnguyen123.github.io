@@ -1,17 +1,5 @@
 INDEX VERSION 1.127+C:\Users\Tam Nguyen\Downloads\tamnguyen123.github.io\javacore\java.util\.metadata\.plugins\org.eclipse.jdt.core
-4155206848.index
-1697886153.index
-3065916431.index
-3974580528.index
 1523833645.index
-1299022128.index
-1498219845.index
-3133528496.index
-30765161.index
-1115467115.index
 842507374.index
-4108727661.index
-4041092966.index
-305854171.index
-163172794.index
-1995173708.index
+2173162792.index
+623686768.index
