@@ -15,12 +15,12 @@ public class SetDemo {
 			}
 			System.out.println(set);
 
-			TreeSet<Integer> sortedSet = new TreeSet<Integer>(set);
+			TreeSet sortedSet = new TreeSet<Integer>(set);
 			System.out.println("Sorted list is:");
 			System.out.println(sortedSet);
 
-			System.out.println("First item of list: " + (Integer) sortedSet.first());
-			System.out.println("Last item of list: " + (Integer) sortedSet.last());
+			System.out.println("Phan tu dau tien cua tap hop la: " + (Integer) sortedSet.first());
+			System.out.println("Phan tu cuoi cung cua tap hop la: " + (Integer) sortedSet.last());
 		} catch (Exception e) {
 		}
 	}

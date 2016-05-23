@@ -15,7 +15,7 @@ public class SetDemo {
 			}
 			System.out.println(set);
 
-			TreeSet<Integer> sortedSet = new TreeSet<Integer>(set);
+			TreeSet sortedSet = new TreeSet<Integer>(set);
 			System.out.println("Sorted list is:");
 			System.out.println(sortedSet);
 
