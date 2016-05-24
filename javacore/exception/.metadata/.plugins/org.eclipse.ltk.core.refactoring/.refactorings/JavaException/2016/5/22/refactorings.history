@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;JavaException/output.txt&apos; to &apos;onput.txt&apos;" description="Rename resource &apos;output.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="output.txt" name="onput.txt" stamp="1464057886804" updateReferences="true"/>
+</session>
