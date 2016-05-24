@@ -1,0 +1,3 @@
+INDEX VERSION 1.127+C:\Users\Tam Nguyen\Downloads\tamnguyen123.github.io\javacore\java.lang\.metadata\.plugins\org.eclipse.jdt.core
+244104436.index
+2539820890.index
