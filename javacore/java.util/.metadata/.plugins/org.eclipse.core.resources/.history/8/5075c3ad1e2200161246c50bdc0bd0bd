@@ -18,8 +18,8 @@ public class PropertiesDemo {
 		capitals.put("California", "Sacramento");
 		capitals.put("Indiana", "Indianapolis");
 
-		// Show all state and capital in hashtable.
-		states = capitals.keySet(); // set set-view to key
+		// Hien thi tat ca cac state va capital trong hashtable.
+		states = capitals.keySet(); // lay set-view cua cac key
 		Iterator itr = states.iterator();
 		while (itr.hasNext()) {
 			str = (String) itr.next();
@@ -27,7 +27,7 @@ public class PropertiesDemo {
 		}
 		System.out.println();
 
-		// Find state don't have in list -- default
+		// tim kiem state khong co trong list -- xac dinh mac dinh
 		str = capitals.getProperty("Florida", "Not Found");
 		System.out.println("Capital 's Florida is " + str + ".");
 	}
