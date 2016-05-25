@@ -8,8 +8,8 @@ public class StudentDaoImpl implements StudentDao {
 
    public StudentDaoImpl(){
       students = new ArrayList<Student>();
-      Student student1 = new Student("Robert",0);
-      Student student2 = new Student("John",1);
+      Student student1 = new Student("Le A",0);
+      Student student2 = new Student("NGuyen B",1);
       students.add(student1);
       students.add(student2);		
    }
