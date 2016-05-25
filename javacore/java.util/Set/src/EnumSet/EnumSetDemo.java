@@ -3,6 +3,10 @@ import java.util.EnumSet;
 import java.util.Iterator;
 import java.util.Set;
 
+/**
+ * @author Tam Nguyen
+ * Define enum Weekday
+ */
 enum Weekday {
   SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
 }

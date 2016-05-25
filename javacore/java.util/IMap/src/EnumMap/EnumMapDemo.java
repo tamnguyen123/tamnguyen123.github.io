@@ -2,6 +2,10 @@ package EnumMap;
 import java.util.EnumMap;
 import java.util.Iterator;
  
+/**
+ * @author Tam Nguyen
+ * Define enum Color
+ */
 public class EnumMapDemo {
  
   public enum Color {
