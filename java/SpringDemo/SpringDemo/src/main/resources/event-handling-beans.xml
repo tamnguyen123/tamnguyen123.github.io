@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean name="helloEventHandling" class="example.eventhandling.HelloEventHandling">
+		<property name="message" value="Hello"></property>
+	</bean>
+	
+	<bean name="cStartedEventHandler" class="example.eventhandling.CStartedEventHandler"></bean>
+	<bean name="cStoppedEventHandler" class="example.eventhandling.CStoppedEventHandler"></bean>
+	
+	<bean name="customEventHandler" class="example.eventhandling.CustomEventHandler"></bean>
+	<bean name="customEventPublisher" class="example.eventhandling.CustomEventPublisher"></bean>
+</beans>

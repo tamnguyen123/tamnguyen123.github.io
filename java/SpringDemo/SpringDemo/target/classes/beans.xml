@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean name="helloWorld" class="example.beanlifecycle.HelloWorld"
+		init-method="init" destroy-method="destroy">
+		<property name="name" value="Tam"></property>
+	</bean>
+	
+	<bean
+		class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" />
+
+	<bean name="pen" class="example.injectinginnerclass.Pen">
+		<property name="color">
+			<bean id="color" class="example.injectinginnerclass.Color">
+				<property name="colorName" value="Red"></property>
+			</bean>
+		</property>
+	</bean>
+
+	<bean name="javaCollection" class="example.injectingcollection.JavaCollection">
+		<property name="addressList">
+			<list>
+				<value>China</value>
+				<value>Vietnam</value>
+				<value>Indo</value>
+				<value>Indo</value>
+			</list>
+		</property>
+		<property name="addressSet">
+			<set>
+				<value>China</value>
+				<value>Vietnam</value>
+				<value>Indo</value>
+				<value>Indo</value>
+			</set>
+		</property>
+		<property name="addressMap">
+			<map>
+				<entry key="1" value="China"></entry>
+				<entry key="2" value="Vietnam"></entry>
+				<entry key="3" value="Indo"></entry>
+				<entry key="4" value="Indo"></entry>
+			</map>
+		</property>
+		<property name="addressProp">
+			<props>
+				<prop key="one">China</prop>
+				<prop key="two">Vietnam</prop>
+				<prop key="three">Indo</prop>
+				<prop key="four">Indo</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean name="brandBean" class="example.autowiring.Brand">
+		<property name="name" value="Mercedes"></property>
+	</bean>
+	<bean name="carBean" class="example.autowiring.Car">
+		<property name="status" value="false"></property>
+	</bean>
+</beans>
