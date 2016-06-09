@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+	<!-- Autowire byType -->
+	<bean name="address" class="example.autowiring.Address">
+		<property name="street" value="Cong Hoa"></property>
+		<property name="city" value="Ho Chi Minh City"></property>
+		<property name="country" value="VietNam"></property>
+	</bean>
+
+	<bean name="student" class="example.autowiring.Student" autowire="byType">
+		<property name="id" value="12130355"></property>
+		<property name="firstName" value="Tam"></property>
+		<property name="lastName" value="Nguyen"></property>
+	</bean>
+	
+	<!-- Autowire no -->
+	<!-- 
+	<bean name="address" class="example.autowiring.Address">
+		<property name="street" value="Cong Hoa"></property>
+		<property name="city" value="Ho Chi Minh City"></property>
+		<property name="country" value="VietNam"></property>
+	</bean>
+
+	<bean name="student" class="example.autowiring.Student">
+		<property name="id" value="12130355"></property>
+		<property name="firstName" value="Tam"></property>
+		<property name="lastName" value="Nguyen"></property>
+		<property name="address" ref="address"></property>
+	</bean>
+	 -->
+	 <!-- Autowire byName -->
+	 <!-- 
+	 	<bean name="address" class="example.autowiring.Address">
+		<property name="street" value="Cong Hoa"></property>
+		<property name="city" value="Ho Chi Minh City"></property>
+		<property name="country" value="VietNam"></property>
+	</bean>
+
+	<bean name="student" class="example.autowiring.Student" autowire="byName">
+		<property name="id" value="12130355"></property>
+		<property name="firstName" value="Tam"></property>
+		<property name="lastName" value="Nguyen"></property>
+	</bean>
+	
+	  -->
+</beans>
